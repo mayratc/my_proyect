@@ -1,0 +1,40 @@
+.input {
+  border:20px;
+}
+.frm {
+  text-align: center;
+
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 120px;
+  color: #EF0C51;
+  border-color: #F6EBEE, 20;
+}
+
+h2 {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  color: #EE6C07;
+  border: 20px;
+}
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size:  20px;
+  font-weight: lighter;
+
+}
+h2 strong {
+  font-weight: 800;
+  
+}
+#txt_nombre {
+  color: #AEABA9;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Cabin', sans-serif;
+}
+.Ingresar {
+  color: #98CED9;
+}
+

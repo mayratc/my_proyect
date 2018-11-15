@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body background="imagenes/imagen7.png">
+
+    <div name="formulario" class="frm">
+        <h1>Bienvenido a trivialine</h1>
+        <h2>"Podras<strong> &nbsp; disfrutar</strong> y <strong>entrenerte &nbsp;</strong>con preguntas de temas que mas conoces."</h2>
+        <h3>Para comenzar debe brindarnos su nombre:</h3>
+        <input id="txt_nombre" type=text placeholder="Ingrese nombre">
+        <input type="button" value="Ingresar" onclick="Ingresar()" >
+    </div>
+
+    <div name= "formulario" class="frm" style="display:none">
+        <p style="font-size: 30px;color:#D52773;font-family: 'Poppins', sans-serif;font-family: 'Fredoka One', cursive;">Hola <span name="nombre"></span><br>Para empezar a jugar, elige una de las categorias mostradas:</br></p>
+        <input type="button" value="bebidas" onclick="bebidas()">
+        <input type="button" value="comidas" onclick="comida()">
+    </div>
+
+    <div name="formulario" class="frm" style="display:none">
+        <h2 fonts-size: "80px">Trivia de Bebidas</h2>
+        <div name="nombre">
+            <h3>Categoria 1</h3>
+        </div>
+
+        <h4>¿Que bebida es peruana?</h4>
+        <label>
+            <input type="radio" name="respuesta0" value="250" onclick="sumarPuntos()">Chicha de jora
+        </label>
+        <label>
+            <input type="radio" name="respuesta0" value="0" onclick="sumarPuntos()">Mote con huesillo
+        </label>
+        <label>
+            <input type="radio" name="respuesta0" value="0" onclick="sumarPuntos()">Sorbete de Borojò
+        </label>
+
+        <h4>¿Que bebida es Argentina?</h4>
+        <label>
+            <input type="radio" name="respuesta1" value="0" onclick="sumarPuntos()">Inca Kola
+        </label>
+        <label>
+            <input type="radio" name="respuesta1" value="250" onclick="sumarPuntos()">Goliat
+        </label>
+        <label>
+            <input type="radio" name="respuesta1" value="0" onclick="sumarPuntos()">Bilz
+        </label>
+        <h4>¿Que bebida es Venezolana?</h4>
+        <label>
+            <input type="radio" name="respuesta2" value="0" onclick="sumarPuntos()">aguardiente
+        </label>
+        <label>
+             <input type="radio" name="respuesta2" value="0" onclick="sumarPuntos()">pisco  sour
+        </label>
+        <label>
+            <input type="radio" name="respuesta2" value="250" onclick="sumarPuntos()">tizana
+        </label>
+        <br>
+        <input type="button" value="Calcular" name="calcular" onclick="calcular()" style="display:none">
+    </div>
+
+    <div name="formulario" class="frm" style="display:none">
+            <h2>Trivia de Comidas</h2>
+            <div name="datos">
+
+            </div>
+
+            <h4>¿Que comida es peruana?</h4>
+            <label>
+                <input type="radio" name="respuesta0" value="0" onclick="sumarPuntos()">Silpacho
+            </label>
+            <label>
+                <input type="radio" name="respuesta0" value="250" onclick="sumarPuntos()">Sopa menestron
+            </label>
+            <label>
+                <input type="radio" name="respuesta0" value="0" onclick="sumarPuntos()">Pabellon
+            </label>
+
+            <h4>¿Que comida es Argentina?</h4>
+            <label>
+                <input type="radio" name="respuesta1" value="250" onclick="sumarPuntos()">Provoleta
+            </label>
+            <label>
+                <input type="radio" name="respuesta1" value="0" onclick="sumarPuntos()">Locro
+            </label>
+            <label>
+                <input type="radio" name="respuesta1" value="0" onclick="sumarPuntos()">Pachamanca
+            </label>
+            <h4>¿Que comida es Venezolana?</h4>
+            <label>
+                <input type="radio" name="respuesta2" value="0" onclick="sumarPuntos()">Aeropuerto
+            </label>
+            <label>
+                 <input type="radio" name="respuesta2" value="250" onclick="sumarPuntos()">Pabellon
+            </label>
+            <label>
+                <input type="radio" name="respuesta2" value="0" onclick="sumarPuntos()">Ajiaco con pollo
+            <br>
+            <input type="button" value="Calcular" name="calcular" onclick="calcular()" style="display:none">
+        </div>
+
+        <div name="formulario" class="frm" style="display:none">
+                <h1>¡FIN DEL JUEGO!</h1>
+                <h2>RESPUESTAS:</h2>
+                <P>Correctas:<span name="correcta"></span></P>
+                <p>Incorrectas:<span name="incorrecta"></span></p>
+                <input type="button" value="Jugar de nuevo" onclick="volver()">
+                <input type="button" value="bebida" onclick="bebidas()">
+                <input type="button" value="comida" onclick="comida()">
+           
+        </div>
+
+
+    <script type="text/javascript" src="app.js">
+    </script>
+</body>
+</html>
